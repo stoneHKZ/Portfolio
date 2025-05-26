@@ -150,7 +150,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0,2rem;            /* espace entre les boutons */
+  gap: 10rem;            /* espace entre les boutons */
   width: 100%;
   height: auto;
   margin-top: 2rem;     /* pour les décoller du texte */
