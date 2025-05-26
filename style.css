@@ -162,22 +162,24 @@ section {
 }
 
 
-.btn-box a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
+.btn-box .btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem;     /* gère la taille ici */
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  color: var(--bg-color);
+  border: .2rem solid var(--main-color);
+  border-radius: .8rem;
+  background: var(--main-color); /* bouton normal */
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
 }
+
 
 
 .btn-box .btn:hover {
