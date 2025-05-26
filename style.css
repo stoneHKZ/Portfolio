@@ -149,11 +149,13 @@ section {
 .btn-box {
   position: relative;
   display: flex;
-  justify-content: center;  /* centre les boutons */
-  gap: 1rem;                 /* espace entre les boutons */
-  width: auto;
+  justify-content: center;     /* centre les boutons horizontalement */
+  align-items: center;
+  gap: 1rem;                   /* espace entre les boutons */
   height: 5rem;
+  width: auto;                 /* adapte la largeur au contenu */
 }
+
 
 
 .btn-box .btn {
