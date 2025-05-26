@@ -737,17 +737,31 @@ span {
   }
 }
 /*  
-  1) On supprime d’abord TOUTE bordure gauche sur les deux boîtes imbriquées  
-     (celles-là viennent de ton style .education-box de base).  
-*/
+/* ① Supprime tous les rails */
 #realisations .education-box {
   border-left: none !important;
 }
 
-/* 
-  2) On réactive la bordure UNIQUEMENT sur la boîte imbriquée qui crée 
-     réellement ta timeline (celle sous .education-content). 
+/* ② Supprime les boules d’origine */
+#realisations .education-content::before {
+  display: none !important;
+}
+
+/* ③ (Optionnel) Si tu veux des vraies puces au lieu de rien,
+      tu peux en recréer ici, par exemple sur les .year :
 */
-#realisations .education-column > .education-box > .education-content > .education-box {
-  border-left: .2rem solid var(--main-color) !important;
+#realisations .education-content .year {
+  position: relative;
+  padding-left: 2.5rem;    /* espace pour la puce */
+}
+#realisations .education-content .year::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background: var(--main-color);
+  border-radius: 50%;
 }
