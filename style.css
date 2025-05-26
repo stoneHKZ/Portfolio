@@ -150,10 +150,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10rem;            /* espace entre les boutons */
+  gap: 1rem;            /* espace entre les boutons */
   width: 100%;
   height: auto;
-  margin-top: 2rem;     /* pour les décoller du texte */
+  margin-top: 1rem;     /* pour les décoller du texte */
 }
 
 
