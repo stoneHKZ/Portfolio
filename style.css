@@ -144,7 +144,12 @@ section {
     font-size: 2rem;
     margin: 2rem 0 4rem;
 }
-
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
 /* Styles de la boîte de boutons */
 .btn-box {
   display: flex;
@@ -157,22 +162,21 @@ section {
 }
 
 
-.btn-box .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 15rem;
-  height: 4.5rem; /* fixe la hauteur */
-  background: var(--main-color);
-  color: var(--bg-color);
-  border: 0.2rem solid var(--main-color);
-  border-radius: 0.8rem;
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  text-decoration: none;
-  transition: 0.3s;
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
 }
 
 
