@@ -736,7 +736,13 @@ span {
     flex: 1 1 100%;
   }
 }
-/* tout à la fin de style.css */
-section#realisations .education-column > .education-box {
+/* ========== override pour la section “réalisations” ========== */
+/* on cible la boîte parent “education-box” directement sous .education-column */
+#realisations .education-column > .education-box {
   border-left: none !important;
 }
+/* on s’assure que la boîte imbriquée (la vraie timeline) garde sa bordure */
+#realisations .education-column > .education-box .education-box {
+  border-left: .2rem solid var(--main-color);
+}
+
