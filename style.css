@@ -736,13 +736,18 @@ span {
     flex: 1 1 100%;
   }
 }
-/* ========== override pour la section “réalisations” ========== */
-/* on cible la boîte parent “education-box” directement sous .education-column */
-#realisations .education-column > .education-box {
+/*  
+  1) On supprime d’abord TOUTE bordure gauche sur les deux boîtes imbriquées  
+     (celles-là viennent de ton style .education-box de base).  
+*/
+#realisations .education-box {
   border-left: none !important;
 }
-/* on s’assure que la boîte imbriquée (la vraie timeline) garde sa bordure */
-#realisations .education-column > .education-box .education-box {
-  border-left: .2rem solid var(--main-color);
-}
 
+/* 
+  2) On réactive la bordure UNIQUEMENT sur la boîte imbriquée qui crée 
+     réellement ta timeline (celle sous .education-content). 
+*/
+#realisations .education-column > .education-box > .education-content > .education-box {
+  border-left: .2rem solid var(--main-color) !important;
+}
