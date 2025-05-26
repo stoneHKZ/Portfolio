@@ -147,12 +147,14 @@ section {
 
 /* Styles de la boîte de boutons */
 .btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 34.5rem;
-    height: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;  /* centre les boutons */
+  gap: 1rem;                 /* espace entre les boutons */
+  width: auto;
+  height: 5rem;
 }
+
 
 .btn-box .btn {
     position: relative;
