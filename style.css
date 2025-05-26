@@ -736,3 +736,7 @@ span {
     flex: 1 1 100%;
   }
 }
+/* tout à la fin de style.css */
+section#realisations .education-column > .education-box {
+  border-left: none !important;
+}
